@@ -85,6 +85,33 @@ export async function fetchCardData() {
     console.error('Database Error:', error);
     throw new Error('Failed to fetch card data.');
   }
+
+  // const dataPromise = sql`
+  //     SELECT 
+  //       (SELECT COUNT(*) FROM invoices) AS invoice_count,
+  //       (SELECT COUNT(*) FROM customers) AS customer_count,
+  //       (SELECT SUM(CASE WHEN status = 'paid' THEN amount ELSE 0 END) FROM invoices) AS total_paid,
+  //       (SELECT SUM(CASE WHEN status = 'pending' THEN amount ELSE 0 END) FROM invoices) AS total_pending
+  //   `;
+
+  //   const data = await dataPromise;
+
+  //   const numberOfInvoices = Number(data.rows[0].invoice_count ?? '0');
+  //   const numberOfCustomers = Number(data.rows[0].customer_count ?? '0');
+  //   const totalPaidInvoices = formatCurrency(data.rows[0].total_paid ?? '0');
+  //   const totalPendingInvoices = formatCurrency(data.rows[0].total_pending ?? '0');
+
+  //   return {
+  //     numberOfCustomers,
+  //     numberOfInvoices,
+  //     totalPaidInvoices,
+  //     totalPendingInvoices,
+  //   };
+  // } catch (error) {
+  //   console.error('Database Error:', error);
+  //   throw new Error('Failed to fetch card data.');
+  // }
+  
 }
 
 const ITEMS_PER_PAGE = 6;
