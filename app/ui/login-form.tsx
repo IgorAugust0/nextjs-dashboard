@@ -6,13 +6,12 @@ import {
   KeyIcon,
   ExclamationCircleIcon,
 } from '@heroicons/react/24/outline';
-import { ArrowRightIcon } from '@heroicons/react/20/solid';
-import { Button } from './button';
-import { useFormState } from 'react-dom';
 import { authenticate } from '../lib/actions';
+import { useActionState } from 'react'; // = useFormState
+import LoginButton from './login-button';
 
 export default function LoginForm() {
-  const [errorMessage, formAction, isPending] = useFormState(
+  const [errorMessage, formAction, isPending] = useActionState(
     authenticate,
     undefined,
   );
@@ -65,9 +64,6 @@ export default function LoginForm() {
           </div>
         </div>
         <LoginButton isPending={isPending} />
-        {/* <Button className="mt-4 w-full" aria-disabled={isPending}>
-          Log in <ArrowRightIcon className="ml-auto h-5 w-5 text-gray-50" />
-        </Button> */}
         <div
           className="flex h-8 items-end space-x-1"
           aria-live="polite"
@@ -82,15 +78,5 @@ export default function LoginForm() {
         </div>
       </div>
     </form>
-  );
-}
-
-// if you want to use the LoginButton component in another file:
-// export { LoginButton }; | or create a separate file and use the export default syntax
-function LoginButton({ isPending }: { isPending: undefined }) {
-  return (
-    <Button className="mt-4 w-full" aria-disabled={isPending}>
-      Log in <ArrowRightIcon className="ml-auto h-5 w-5 text-gray-50" />
-    </Button>
   );
 }
