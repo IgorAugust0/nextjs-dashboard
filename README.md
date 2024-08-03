@@ -1,6 +1,6 @@
 # Next.js Dashboard
 
-This is a simple finantial dashboard built with Next.js and Tailwind CSS, developed as part of the Next.js App Router Course. The application allows users to manage invoices, customers, and revenue data.
+This is a simple financial dashboard built with Next.js and Tailwind CSS, developed as part of the Next.js App Router Course. The application allows users to manage invoices, customers, and revenue data.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FIgorAugust0%2Fnextjs-dashboard)
 
