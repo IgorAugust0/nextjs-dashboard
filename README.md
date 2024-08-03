@@ -1,8 +1,14 @@
 # Next.js Dashboard
 
-This is a simple finantial dashboard built with Next.js and Tailwind CSS, developed as part of the Next.js App Router Course.
+This is a simple finantial dashboard built with Next.js and Tailwind CSS, developed as part of the Next.js App Router Course. The application allows users to manage invoices, customers, and revenue data.
 
-![hero-desktop](https://github.com/user-attachments/assets/7a612a79-4b10-4ab0-8e7c-6d361191bc5c)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FIgorAugust0%2Fnextjs-dashboard)
+
+<div>
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/7a612a79-4b10-4ab0-8e7c-6d361191bc5c" alt="Readme" width="725">
+  </p>
+</div>
 
 ## Features
 
@@ -56,16 +62,16 @@ pnpm dev
 
 Here's a brief overview of what I've learned while building this project:
 
-- Styling: The different ways to style a Next.js application using Tailwind CSS.
-- Optimizations: How to optimize images, links, and fonts.
-- Routing: How to create nested layouts and pages using file-system routing.
-- Data Fetching: How to set up a database on Vercel, and best practices for fetching and streaming.
-- Search and Pagination: How to implement search and pagination using URL Search Params.
-- Mutating Data: How to mutate data using React Server Actions, and revalidate the Next.js cache.
-- Error Handling: How to handle general and 404 not found errors.
-- Form Validation and Accessibility: How to do server-side form validation and tips for improving accessibility.
-- Authentication: How to add authentication to a application using NextAuth.js and Middleware.
-- Metadata: How to add metadata and prepare a application for social sharing.
+- **Styling**: The different ways to style a Next.js application using Tailwind CSS.
+- **Optimizations**: How to optimize images, links, and fonts.
+- **Routing**: How to create nested layouts and pages using file-system routing.
+- **Data Fetching**: How to set up a database on Vercel, and best practices for fetching and streaming.
+- **Search and Pagination**: How to implement search and pagination using URL Search Params.
+- **Mutating Data**: How to mutate data using React Server Actions, and revalidate the Next.js cache.
+- **Error Handling**: How to handle general and 404 not found errors.
+- **Form Validation and Accessibility**: How to do server-side form validation and tips for improving accessibility.
+- **Authentication**: How to add authentication to a application using NextAuth.js and Middleware.
+- **Metadata**: How to add metadata and prepare a application for social sharing.
 
 For more information, see the [course curriculum](https://nextjs.org/learn) on the Next.js Website.
 
